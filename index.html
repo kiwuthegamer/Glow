@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polygon Drawer</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            cursor: none;
+        }
+        canvas {
+            display: block;
+            background-color: black;
+        }
+        .cursor {
+            position: absolute;
+            pointer-events: none;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(50, 50, 255, 0.2);
+            border: solid 2px rgba(50,50,255,1);
+            transform: translate(-50%, -50%);
+            /* add shadow inset and normal */
+            box-shadow: 0 0 10px rgba(50,50,255,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+    <canvas id="canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
